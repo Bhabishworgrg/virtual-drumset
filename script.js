@@ -9,32 +9,72 @@ const hihat_audio = document.getElementById('hihat-audio');
 const open_hihat_audio = document.getElementById('open-hihat-audio');
 
 snare_btn.addEventListener('click', () => {
-	snare_audio.play();
+	const snare_clone = snare_audio.cloneNode();
+    document.body.appendChild(snare_clone);
+    snare_clone.play();
+    snare_clone.addEventListener('ended', () => {
+        snare_clone.remove();
+	});
 });
 
 kick_btn.addEventListener('click', () => {
-	kick_audio.play();
+	const kick_clone = kick_audio.cloneNode();
+    document.body.appendChild(kick_clone);
+    kick_clone.play();
+    kick_clone.addEventListener('ended', () => {
+        kick_clone.remove();
+	});
 });
 hihat_btn.addEventListener('click', () => {
-	hihat_audio.play();
+	const hihat_clone = hihat_audio.cloneNode();
+	document.body.appendChild(hihat_clone);
+	hihat_clone.play();
+	hihat_clone.addEventListener('ended', () => {
+		hihat_clone.remove();
+	});
 });
 open_hihat_btn.addEventListener('click', () => {
-	open_hihat_audio.play();
+	const open_hihat_clone = open_hihat_audio.cloneNode();
+	document.body.appendChild(open_hihat_clone);
+	open_hihat_clone.play();
+	open_hihat_clone.addEventListener('ended', () => {
+		open_hihat_clone.remove();
+	});
 });
 
 document.addEventListener('keydown', (e) => {
 	switch (e.key) {
 		case 'a':
-			snare_audio.play();
+			const snare_clone = snare_audio.cloneNode();
+			document.body.appendChild(snare_clone);
+			snare_clone.play();
+			snare_clone.addEventListener('ended', () => {
+				snare_clone.remove();
+			});
 			break;
 		case 's':
-			kick_audio.play();
+			const kick_clone = kick_audio.cloneNode();
+			document.body.appendChild(kick_clone);
+			kick_clone.play();
+			kick_clone.addEventListener('ended', () => {
+				kick_clone.remove();
+			});
 			break;
 		case 'd':
-			hihat_audio.play();
+			const hihat_clone = hihat_audio.cloneNode();
+			document.body.appendChild(hihat_clone);
+			hihat_clone.play();
+			hihat_clone.addEventListener('ended', () => {
+				hihat_clone.remove();
+			});
 			break;
 		case 'f':
-			open_hihat_audio.play();
+			const open_hihat_clone = open_hihat_audio.cloneNode();
+			document.body.appendChild(open_hihat_clone);
+			open_hihat_clone.play();
+			open_hihat_clone.addEventListener('ended', () => {
+				open_hihat_clone.remove();
+			});
 			break;
 		default:
 			break;

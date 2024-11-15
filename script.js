@@ -9,10 +9,10 @@ const hihat_audio = document.getElementById('hihat-audio');
 const open_hihat_audio = document.getElementById('open-hihat-audio');
 
 function play_sound(audio) {
-	const clone = audio.cloneNode();
-	document.body.appendChild(clone);
-	clone.play();
-	clone.addEventListener('ended', () => clone.remove());
+	if (audio) {
+		const clone = new Audio(audio.src);
+		clone.play();
+	}
 }
 
 snare_btn.addEventListener('click', () => {

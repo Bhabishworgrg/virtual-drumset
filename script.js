@@ -34,10 +34,10 @@ open_hihat_btn.addEventListener('click', () => {
 document.addEventListener('keydown', (e) => {
 	switch (e.key) {
 		case 'a':
-			play_sound(snare_audio);
+			play_sound(kick_audio);
 			break;
 		case 's':
-			play_sound(kick_audio);
+			play_sound(snare_audio);
 			break;
 		case 'd':
 			play_sound(hihat_audio);

@@ -15,37 +15,23 @@ function play_sound(audio) {
 	}
 }
 
-snare_btn.addEventListener('click', () => {
-	play_sound(snare_audio);
-});
+const audios = [
+	{ audio: kick_audio, key: 'a', btn: kick_btn },
+	{ audio: snare_audio, key: 's', btn: snare_btn },
+	{ audio: hihat_audio, key: 'd', btn: hihat_btn },
+	{ audio: open_hihat_audio, key: 'f', btn: open_hihat_btn }
+];
 
-kick_btn.addEventListener('click', () => {
-	play_sound(kick_audio);
-});
+for (let obj of audios) {
+	obj.btn.addEventListener('click', () => {
+		play_sound(obj.audio);
+	});
+}
 
-hihat_btn.addEventListener('click', () => {
-	play_sound(hihat_audio);
-});
-
-open_hihat_btn.addEventListener('click', () => {
-	play_sound(open_hihat_audio);
-});
-
-document.addEventListener('keydown', (e) => {
-	switch (e.key) {
-		case 'a':
-			play_sound(kick_audio);
-			break;
-		case 's':
-			play_sound(snare_audio);
-			break;
-		case 'd':
-			play_sound(hihat_audio);
-			break;
-		case 'f':
-			play_sound(open_hihat_audio);
-			break;
-		default:
-			break;
+document.addEventListener('keydown', (event) => {
+	for (let obj of audios) {
+		if (event.key === obj.key) {
+			play_sound(obj.audio);
+		}
 	}
 });

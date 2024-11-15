@@ -1,0 +1,37 @@
+* {
+  	margin: 0;
+  	padding: 0;
+}
+
+body {
+  	background-color: #254336;
+}
+
+.drums-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.drum {
+	display: grid;
+	place-items: center;
+}
+
+.drum-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: #B7B597;
+	color: #254336;
+	border-radius: 50%;
+	margin: 10px 10px;
+	cursor: pointer;
+}
+
+.drum-text {
+	color: #DAD3BE;
+}

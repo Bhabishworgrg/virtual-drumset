@@ -5,14 +5,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<title>Virtual Drumset</title>
+
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
-		<button id="kick-btn">A</button>
-		<button id="snare-btn">S</button>
-		<button id="hihat-btn">D</button>
-		<button id="open-hihat-btn">F</button>
-	
+		<div class="drums-container">
+			<div class="drum">
+				<button class="drum-btn" id="kick-btn">A</button>
+				<p class="drum-text">Kick</p>
+			</div>
+			<div class="drum">
+				<button class="drum-btn" id="snare-btn">S</button>
+				<p class="drum-text">Snare</p>
+			</div>
+			<div class="drum">
+				<button class="drum-btn" id="hihat-btn">D</button>
+				<p class="drum-text">Hi-Hat</p>
+			</div>
+			<div class="drum">
+				<button class="drum-btn" id="open-hihat-btn">F</button>
+				<p class="drum-text">Open Hi-Hat</p>
+			</div>
+		</div>
+
 		<audio src="sounds/kick.wav" type="audio/wav" id="kick-audio" preload="auto"></audio>
 		<audio src="sounds/snare.wav" type="audio/wav" id="snare-audio" preload="auto"></audio>
 		<audio src="sounds/hihat.wav" type="audio/wav" id="hihat-audio" preload="auto"></audio>

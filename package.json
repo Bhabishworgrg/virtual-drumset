@@ -16,4 +16,7 @@
 	"bugs": {
 		"url": "https://github.com/Bhabishworgrg/virtual-drumset/issues"
 	},
+	"devDependencies": {
+		"gh-pages": "^6.2.0"
+	}
 }

@@ -7,11 +7,12 @@
 		<title>Virtual Drumset</title>
 
 		<link rel="stylesheet" href="/style.css">
-		<script type="module" src="/script.js"></script>
+		<script type="module" src="/src/playSounds.js"></script>
+		<script type="module" src="/src/checkOrientation.js"></script>
 	</head>
 
 	<body>
-		<div class="drums-container">
+		<div class="drums-container" id="drums">
 			<div class="drum">
 				<button class="drum-btn" id="kick-btn">A</button>
 				<p class="drum-text">Kick</p>
@@ -28,6 +29,10 @@
 				<button class="drum-btn" id="open-hihat-btn">F</button>
 				<p class="drum-text">Open Hi-Hat</p>
 			</div>
+		</div>
+
+		<div id="warning">
+			<p>Change to landscape mode to play!</p>
 		</div>
 	</body>
 </html>

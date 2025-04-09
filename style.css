@@ -35,3 +35,7 @@ body {
 .drum-text {
 	color: #DAD3BE;
 }
+
+.hidden {
+	display: none;
+}

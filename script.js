@@ -11,7 +11,7 @@ async function loadSound(url, id) {
 const ids = ['kick', 'snare', 'hihat', 'open-hihat'];
 
 for (let id of ids) {
-	loadSound(`sounds/${ id }.wav`, id);
+	loadSound(`/sounds/${ id }.wav`, id);
 }
 
 function play_sound(id) {

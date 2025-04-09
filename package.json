@@ -5,7 +5,9 @@
 	"main": "script.js",
 	"homepage": "https://bhabishworgrg.github.io/virtual-drumset",
 	"scripts": {
-		"deploy": "gh-pages -d ."
+		"dev": "vite",
+		"build": "vite build",
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
@@ -17,6 +19,7 @@
 		"url": "https://github.com/Bhabishworgrg/virtual-drumset/issues"
 	},
 	"devDependencies": {
-		"gh-pages": "^6.2.0"
+		"gh-pages": "^6.2.0",
+		"vite": "^6.2.5"
 	}
 }

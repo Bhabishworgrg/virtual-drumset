@@ -1,10 +1,10 @@
-const snare_btn = document.getElementById('snare-btn');
 const kick_btn = document.getElementById('kick-btn');
+const snare_btn = document.getElementById('snare-btn');
 const hihat_btn = document.getElementById('hihat-btn');
 const open_hihat_btn = document.getElementById('open-hihat-btn');
 
-const snare_audio = document.getElementById('snare-audio');
 const kick_audio = document.getElementById('kick-audio');
+const snare_audio = document.getElementById('snare-audio');
 const hihat_audio = document.getElementById('hihat-audio');
 const open_hihat_audio = document.getElementById('open-hihat-audio');
 
